@@ -2,7 +2,8 @@
 
 DATE=`date +%Y-%m-%d`
 
-find . -print \
+cd ..
+find HtmleasyPlayground -print \
 	| grep -v "git" \
 	| grep -v "package\.sh" \
-	| zip HtmlPlayground-${DATE}.zip -@
+	| zip HtmleasyPlayground/HtmleasyPlayground-${DATE}.zip -@
