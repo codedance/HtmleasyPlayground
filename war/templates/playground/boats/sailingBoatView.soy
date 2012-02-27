@@ -1,0 +1,34 @@
+{namespace playground.boats}
+
+/**
+ * Display details about a sailing boat.
+ * @param name The boat's name.
+ * @param lengthOverAll The boat's length.
+ * @param sailArea The boat's sail area in meters.
+ * @param numberOfCrew The boat's normal crew number.
+ */
+{template .sailingBoatView}
+    {call shared.header}
+      {param pageTitle: 'Example 3 -  Sailing Boat - ' + $name /}
+    {/call}
+	
+		<h1>{$name} (Sailing Boat)</h1>
+		<table>
+		  <tr>
+		    <td>Name:</td><td>{$name}</td>
+		  </tr>
+		  <tr>
+		    <td>Length Over All (LOA):</td><td>{$lengthOverAll} m</td>
+		  </tr>
+		  <tr>
+		    <td>Sail Area:</td><td>{$sailArea} m<sup>2</sup></td>
+		  </tr>
+		  <tr>
+		    <td>Crew:</td><td>{$numberOfCrew}</td>
+		  </tr>
+	    </table>
+	    
+	    <a href="/boats">Back to boats list</a>
+	    
+	{call shared.footer /}
+{/template}

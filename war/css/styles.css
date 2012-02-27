@@ -1,0 +1,85 @@
+/* Tripoli overrides */
+.content { font-size: 1.1em !important; }
+.content p + ul { margin-top: -0.8em; }
+.sticker .content h1 { font-size: 1.6em; margin: 0.4em 0 0.4em 0; }
+.sticker .content h2 { font-size: 1.4em ;}
+.sticker .content h3 { font-size: 1.2em ;}
+.sticker .content a, .sticker a { color: #1010dc; text-decoration: underline; }
+.sticker .content form { margin: 0; padding: 0; }
+
+/* Basics */
+a { text-decoration: none; }
+code { font-family: Consolas, Monaco, "Courier New", mono-space, monospace !important; }
+
+li ul, li ol  { margin-bottom: 1em !important ; }
+
+.center { text-align: center }
+.left { text-align: left }
+.right { text-align: right }
+.justify { text-align: justify }
+
+.floatLeft { float: left !important; }
+.floatRight { float: right !important; }
+.floatNone { float: none !important; }
+
+.clear { clear: both}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+
+.relative { position: relative !important }
+.absolute { position: absolute }
+
+.inline { display: inline; }
+.cursor { cursor: pointer }
+
+li p.smallprint { margin-top: -0.25em; line-height: 1.4em; font-size: 0.9em; margin-bottom: 0.9em; font-style: italic; color: #444; }
+
+/* Page */
+#wrapper {margin: 0 auto; width: 982px; }
+html { background: #253075 url(/images/main-background.jpg) no-repeat top center; }
+body { font-family: arial; font-size: 14px; }
+.sticker { 
+	background-color: white; padding: 1.25em 1.45em 1.25em 1.55em; margin: 0.5em 0 3em 0; -moz-border-radius: 1em; -webkit-border-radius: 1em; border-radius: 1em; 
+	opacity:0.8; -moz-box-shadow: 0 0 1.1em #666; -webkit-box-shadow: 0 0 1.1em #666; box-shadow: 0 0 1.1em #666;
+}
+
+.sticker .heading, .sticker h1 { color: #1010dc; margin: 0.25em 0 0.25em 0; font-weight: bold; font-size: 1.2em;
+}
+
+.vspace { height: 2em;}
+
+/* Menu */
+.main-menu { display:table; float:right; margin: 1em 0 0.5em 0; font-size: 14px; font-weight: bold; }
+.main-menu ul li { display: inline; }
+.main-menu ul li a { 
+	display: inline-block; padding: 0.4em 1.5em; text-decoration: none; 
+	-moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; border-radius: 0.5em; 
+}
+.main-menu ul li a, .main-menu ul li a:visited { color: white; }
+.main-menu ul li a.active, .main-menu ul li a:hover { background-color: #0a0a84; }
+
+
+/* Columns */
+div.leftCol { position: absolute; width: 16em; padding-top: 1em; }
+div.rightCol { margin-left: 16em; }
+div.rightCol .sticker { min-height: 64em;}
+div.leftColContents { width: 15em; height: 500px; padding: 1em; }
+div.leftColBackground { background-color: black; opacity:0.4; position: absolute; 
+	width: 16em; height:100%; z-index: -1; 
+	-moz-border-radius-topleft: 1em; -moz-border-radius-bottomleft: 1em; 
+	-webkit-border-top-left-radius: 1em; -webkit-border-bottom-left-radius: 1em; 
+	border-top-left-radius: 1em; border-bottom-left-radius: 1em; 	
+}
+
+div.leftCol h1 { font-size: 1.2em; margin: 1.5em 0 0.75em 0; }
+div.leftCol h1:first-child { margin-top: 0.5em;}
+div.leftCol h2 { font-size: 1em; font-weight: bold; margin-bottom: 0.4em; margin-left: 0.25em; }
+div.leftCol, div.leftCol a, div.leftCol code { color: #e9e8ff; }
+div.leftCol a:hover, div.leftCol a:hover code { color: red; }
+div.leftCol ul li { list-style-type: disc; }
+div.leftCol li small { display: block; color: silver; margin-bottom: 1em; line-height: 1.3em; }
+div.leftCol ol, div.leftCol ul { margin: 0 0 1em 1.6em; line-height: 1.5em; }
+div.leftCol ol code, div.leftCol ul code { font-weight: bold; }
+div.leftCol li.active, div.leftCol li.active a, div.leftCol li.active code, div.leftCol li.active small { color: orange; font-weight: bold; }
+
+/* Footer */
+#page-footer { padding: 15px; text-align: right; }

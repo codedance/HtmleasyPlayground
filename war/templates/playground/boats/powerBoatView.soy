@@ -1,0 +1,34 @@
+{namespace playground.boats}
+
+/**
+ * Display details about a power boat.
+ * @param name The boat's name.
+ * @param lengthOverAll The boat's length.
+ * @param enginePower The boat's horse power.
+ * @param maxSpeedKnots The boat's max speed.
+ */
+{template .powerBoatView}
+    {call shared.header}
+      {param pageTitle: 'Example 3 - Power Boat - ' + $name /}
+    {/call}
+    
+		<h1>{$name} (Power Boat)</h1>
+		<table>
+		  <tr>
+		    <td>Name:</td><td>{$name}</td>
+		  </tr>
+		  <tr>
+		    <td>Length Over All (LOA):</td><td>{$lengthOverAll} m</td>
+		  </tr>
+		  <tr>
+		    <td>Engine Power:</td><td>{$enginePower}</td>
+		  </tr>
+		  <tr>
+		    <td>Max Speed:</td><td>{$maxSpeedKnots} knots</td>
+		  </tr>
+	    </table>
+	    
+	    <a href="/boats">Back to boats list</a>
+	    
+	{call shared.footer /}
+{/template}

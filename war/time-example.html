@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Htmleasy Playground - Example 1 - The time is</title>
+        <link href="/css/tripoli.simple.css" type="text/css" rel="stylesheet" /> 
+        <link href="/css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="vspace"></div>
+            <div class="main-menu">
+			    <ul>
+			        <li><a rel="home" href="/">Home</a></li>
+			        <li><a rel="htmleasy" href="http://code.google.com/p/htmleasy/" target="_blank">Htmleasy Site</a></li>
+			        <li><a rel="silken" href="https://github.com/codedance/silken" target="_blank">Silken Site</a></li>
+			    </ul>
+			</div>        	
+<div class="clear"></div>
+   <div class="vspace"></div>
+   <div>	
+	<div class="leftCol">		
+		<div class="leftColBackground">&nbsp;</div>
+		<div class="leftColContents">
+			<h1><a href="/">Examples &amp; Patterns</a></h1>
+			<ul>
+			    <li>
+			        <strong><a href="/time-example.html">Example 1: The time is...</a></strong>
+			        <small>A very simple example showing the use of a simple model.</small>
+			    </li>
+			    <li>
+			        <strong><a href="/signup-example.html">Example 2: User Signup</a></strong>
+			        <small>Demonstrates form submission and AJAX validation.</small>
+			    </li>
+			    <li>
+			        <strong><a href="/boats">Example 3: Boats</a></strong>
+			        <small>Demonstrates the power of polymorphic views - automatically selected views based on object types.</small>
+			    </li>  
+			</ul>
+		</div>		
+	</div>
+	<div class="rightCol">
+		<div class="example sticker">
+		    <div class="content">
+		    	<h1>Example 1: The time is...</h1>
+		    	<p>
+		    	  This is a simple "hello world" type example that shows the use of a model and a view. 
+		    	  The model is a representation of the current time (server generated) and examples
+		    	  render this information in different forms:
+		    	  <ol>
+		    	    <li><a href="/time/now-using-jsp">The time rendered using JSP as a template</a></li>
+		    	    <li><a href="/time/now-using-soy">The time rendered using Google Closure Templtes (soy) via Silken</a></li>
+		    	    <li><a href="/time/now-as-json">The time rendered as JSON</a></li>
+		    	    <li><a href="/time/now-raw-text">The time rendered as raw text via a response writer</a></li>
+		    	  </ol>
+		    	</p>
+		    	
+		    	<p>
+		    	  Key files:
+		    	  <ul>
+		    	    <li><code>src/com/googlecode/htmleasy/playground/TheTime.java</code></li>
+		    	    <li><code>war/templates/playground/time/timeDisplay.jsp</code></li>
+		    	    <li><code>war/templates/playground/time/timeDisplay.soy</code></li>
+		    	  </ul>
+		    	</p>
+		    	</div>
+		    
+		    <div class="clear"></div>
+		</div>
+	</div>	
+</div>
+
+<div class="clear"></div>
+
+        </div>
+        
+        <div id="page-footer">Example developed by <a href="https://github.com/codedance">codedance</a></div> 
+    </body>
+</html>

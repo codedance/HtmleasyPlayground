@@ -1,0 +1,27 @@
+{namespace playground.boats}
+
+/**
+ * Display a list of boats in the database.
+ * @param boats A list of boats.
+ */
+{template .boatList}
+
+    {call shared.header}
+      {param pageTitle: 'Example 3 -  Boats' /}
+    {/call}
+    
+    {call .explanation /}
+
+	<h2>Boats</h2>
+	<p>A list of boats in the database:</p>
+	<table>
+	{foreach $boat in $boats}
+	  <tr>
+	    <td><a href="/boats/{$boat.id}">{$boat.name}</a></td>
+	    <td>{$boat.lengthOverAll}m</td>
+	  </tr>
+	{/foreach}
+    </table>
+    
+	{call shared.footer /}
+{/template}
