@@ -1,11 +1,15 @@
 package com.googlecode.htmleasy.playground.domain.boats;
 
 public interface Boat {
-	
-	int getId();
-	
-	String getName();
-	
-	double getLengthOverAll();
+
+    int getId();
+
+    String getName();
+
+    double getLengthOverAll();
+
+    String getDescription();
+    
+    String getPrice();
 
 }

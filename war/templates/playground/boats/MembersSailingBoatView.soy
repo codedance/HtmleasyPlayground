@@ -1,22 +1,26 @@
 {namespace playground.boats}
 
 /**
- * Display details about a sailing boat.
+ * Display details about a sailing boat with Members extra information (price info).
  * @param name The boat's name.
  * @param lengthOverAll The boat's length.
  * @param sailArea The boat's sail area in meters.
  * @param numberOfCrew The boat's normal crew number.
  * @param description The boat's description as text.
+ * @param price The boat's price (members data).
  */
-{template .SailingBoatView}
+{template .MembersSailingBoatView}
     {call shared.Header}
       {param pageTitle: 'Example 3 -  Sailing Boat - ' + $name /}
     {/call}
 	
-		<h1>{$name} (Sailing Boat)</h1>
+		<h1>{$name} (Sailing Boat) - MEMBERS VIEW</h1>
 		<table>
 		  <tr>
 		    <td>Name:</td><td>{$name}</td>
+		  </tr>
+  		  <tr>
+		    <td><strong>Price:</strong></td><td><strong>{$price}</strong></td>
 		  </tr>
 		  <tr>
 		    <td>Length Over All (LOA):</td><td>{$lengthOverAll} m</td>
@@ -32,7 +36,7 @@
 		  </tr>
 	    </table>
 	    
-	    <a href="/boats">Back to boats list</a>
+	    <a href="/boats/members/">Back to boats list</a>
 	    
 	{call shared.Footer /}
 {/template}

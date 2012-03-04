@@ -27,7 +27,7 @@ public class TheTime {
 		
 		String now = SimpleDateFormat.getDateTimeInstance().format(new Date());
 
-		return new View("/templates/playground/time/timeDisplay.jsp", now);
+		return new View("/templates/playground/time/TimeDisplay.jsp", now);
 	}
 	
     @GET @Path("/now-using-soy")
@@ -35,7 +35,7 @@ public class TheTime {
         
         String now = SimpleDateFormat.getDateTimeInstance().format(new Date());
         
-        return new View("/soy/playground.time.timeDisplay", ImmutableMap.of("time", now));
+        return new View("/soy/playground.time.TimeDisplay", ImmutableMap.of("time", now));
     }
     
     @GET @Path("/now-raw-text")

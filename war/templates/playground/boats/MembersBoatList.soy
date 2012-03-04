@@ -1,19 +1,20 @@
 {namespace playground.boats}
 
 /**
- * Display a list of boats in the database.
+ * Display a list of boats in the database with members special information.
+ 
  * @param boats A list of boats.
  */
-{template .BoatList}
+{template .MembersBoatList}
 
     {call shared.Header}
-      {param pageTitle: 'Example 3 - Boats' /}
+      {param pageTitle: 'Example 4 - Boats (Members Only)' /}
     {/call}
     
-    {call .ExplanationExample3 /}
+    {call .ExplanationExample4 /}
 
 	<h2>Boats</h2>
-	<p>A list of boats in the database:</p>
+	<p>A list of boats in the <strong>Members Only</strong> database (with bonus price information):</p>
 	<table>
 	{foreach $boat in $boats}
 	  <tr>

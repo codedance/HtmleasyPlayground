@@ -1,22 +1,26 @@
 {namespace playground.boats}
 
 /**
- * Display details about a power boat.
+ * Display details about a power boat with Members extra information (price info).
  * @param name The boat's name.
  * @param lengthOverAll The boat's length.
  * @param enginePower The boat's horse power.
  * @param maxSpeedKnots The boat's max speed.
  * @param description The boat's description as text.
+ * @param price The boat's price (members data).
  */
-{template .PowerBoatView}
+{template .MembersPowerBoatView}
     {call shared.Header}
       {param pageTitle: 'Example 3 - Power Boat - ' + $name /}
     {/call}
     
-		<h1>{$name} (Power Boat)</h1>
+		<h1>{$name} (Power Boat) - MEMBERS VIEW</h1>
 		<table>
 		  <tr>
 		    <td>Name:</td><td>{$name}</td>
+		  </tr>
+  		  <tr>
+		    <td><strong>Price:</strong></td><td><strong>{$price}</strong></td>
 		  </tr>
 		  <tr>
 		    <td>Length Over All (LOA):</td><td>{$lengthOverAll} m</td>
@@ -32,7 +36,7 @@
 		  </tr>
 	    </table>
 	    
-	    <a href="/boats">Back to boats list</a>
+	    <a href="/boats/members/">Back to boats list</a>
 	    
 	{call shared.Footer /}
 {/template}

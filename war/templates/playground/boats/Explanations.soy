@@ -1,0 +1,66 @@
+{namespace playground.boats}
+
+/**
+ * Description/Explanation of example 3.
+ */
+{template .ExplanationExample3}
+
+  <h1>Example 3: Boats</h1>
+	<p>
+	  This example demonstrates:
+	  <ol>
+	    <li>Using Silken (Soy / Google Closure Templates) as a view/template technology.</li>
+	    <li>Friendly URLs.</li>
+	    <li>Polymorphism - the view (template used to render the data) is selected automatically based on the 
+	    	controller's returned class.</li>
+	    <li>Using Soy template features such as <code>call</code>, and <code>foreach</code>.</li>
+	  </ol>
+	</p>
+	
+	
+	<p>
+	  Key files:
+	  <ul>
+	    <li><code>src/com/googlecode/htmleasy/playground/Boats.java</code></li>
+	    <li><code>war/templates/playground/boats/BoatList.soy</code></li>
+	    <li><code>war/templates/playground/boats/SailingBoat.soy</code></li>
+	    <li><code>war/templates/playground/boats/PowerBoat.soy</code></li>
+	  </ul>
+	</p>
+	
+	<p>
+	  This example is embedded into this page. 
+	  Click the links below to view different types of boats:
+	</p>
+
+{/template}
+
+/**
+ * Description/Explanation of example 4.
+ */
+{template .ExplanationExample4}
+
+  <h1>Example 4: Boats + More</h1>
+	<p>
+	  This example builds on <a href="/boats/">Example 3</a> to offer special "members only" information (i.e. the 
+	  boat's price).  It's implemented by overriding the default boat template view with an <code>@ViewSet</code> on 
+	  the controller method. The new view (template) displays extra information.
+	</p>
+	
+	
+	<p>
+	  Key files:
+	  <ul>
+	    <li><code>src/com/googlecode/htmleasy/playground/Boats.java</code> 
+	    	&nbsp;(see <code>viewBoatsWithMembersInfo()</code>)</li>
+	    <li><code>war/templates/playground/boats/MembersSailingBoatView.soy</code></li>
+	    <li><code>war/templates/playground/boats/MembersPowerBoatView.soy</code></li>
+	  </ul>
+	</p>
+	
+	<p>
+	  This example is embedded into this page. 
+	  Click the links below to view different types of boats with "members only" info:
+	</p>
+
+{/template}
