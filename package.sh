@@ -1,5 +1,7 @@
 #!/bin/sh
 
+find . -name ".DS_Store" -depth -exec rm {} \;
+
 DATE=`date +%Y-%m-%d`
 
 cd ..
