@@ -10,9 +10,9 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-core-asl-1.8.3.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-jaxrs-1.8.3.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-mapper-asl-1.8.3.jar"/>
-	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/soy-latest.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/htmleasy-0.7.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/silken-2012-02-27.jar"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
